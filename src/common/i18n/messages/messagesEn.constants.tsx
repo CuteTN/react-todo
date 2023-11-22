@@ -1,0 +1,61 @@
+import { TranslationMap } from "./TranslationMap.model";
+
+export const messagesEn: TranslationMap = {
+  languageName: "English",
+  languageImgSrc: "https://cdn.ipregistry.co/flags/noto/us.png",
+  todo: {
+    todo: "To do",
+    task: "task",
+    status: {
+      done: "done",
+      inProgress: "in progress",
+      pending: "pending",
+      todo: "to-do",
+    },
+    form: {
+      name: "name",
+      description: "description",
+      progress: "progress",
+      status: "status",
+    }
+  },
+  common: {
+    language: "language",
+    theme: "theme",
+    lightTheme: "Light theme",
+    darkTheme: "Dark theme",
+    msgThemeName: "{name} theme",
+    colors: {
+      amber: "amber",
+      blue: "blue",
+      blueGrey: "blue grey",
+      brown: "brown",
+      cyan: "cyan",
+      deepOrange: "deep orange",
+      deepPurple: "deep purple",
+      green: "green",
+      grey: "grey",
+      indigo: "indigo",
+      lightBlue: "light blue",
+      lightGreen: "light green",
+      lime: "lime",
+      orange: "orange",
+      pink: "pink",
+      purple: "purple",
+      red: "red",
+      teal: "teal",
+      yellow: "yellow",
+    },
+    goTo: "go to",
+    tasksList: "tasks list",
+    search: "search",
+    add: "add",
+    delete: "delete",
+    edit: "edit",
+    save: "save",
+    cancel: "cancel",
+    ok: "OK",
+    msgItemNotFound: "{item} not found",
+    msgNoItemWithId: "no {item} with ID: {id}"
+  },
+};

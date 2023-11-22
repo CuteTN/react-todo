@@ -1,24 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Navbar } from "./common/components/Navbar.component";
+import { AppI18nProvider } from "./common/i18n/I18nProvider.context";
+import { allLanguages } from "./common/i18n/messages/messages.constants";
+import { AppThemeProvider } from "./common/themes/Theme.context";
+import { themeOptions } from "./common/themes/themes/themes.constants";
+import { AppRouter } from "./common/routers/routers";
+import { Provider } from "react-redux";
+import { reduxStore } from "./common/stores";
+import ramBg from "./assets/images/ram-bg.png"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Provider store={reduxStore}>
+        <AppI18nProvider allLanguages={allLanguages}>
+          <AppThemeProvider themes={themeOptions}>
+            <div className="fixed flex h-full w-full justify-center">
+              <img className="opacity-80 -z-10" src={ramBg} alt="ram-bg" />
+            </div>
+            <Navbar />
+            <AppRouter />
+          </AppThemeProvider>
+        </AppI18nProvider>
+      </Provider>
     </div>
   );
 }

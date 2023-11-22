@@ -1,0 +1,61 @@
+import { TranslationMap } from "./TranslationMap.model";
+
+export const messagesIt: TranslationMap = {
+  languageName: "Italiano 🤌",
+  languageImgSrc: "https://cdn.ipregistry.co/flags/noto/it.png",
+  todo: {
+    todo: "todo",
+    task: "task",
+    status: {
+      done: "fatto",
+      inProgress: "in progresso",
+      pending: "in attesa",
+      todo: "to-do",
+    },
+    form: {
+      name: "nome",
+      description: "descrizione",
+      progress: "progresso",
+      status: "stato",
+    }
+  },
+  common: {
+    language: "lingua",
+    theme: "tema",
+    lightTheme: "Tema Chiaro",
+    darkTheme: "Tema Scuro",
+    msgThemeName: "Tema {name}",
+    colors: {
+      amber: "ambra",
+      blue: "blu",
+      blueGrey: "blu grigio",
+      brown: "marrone",
+      cyan: "ciano",
+      deepOrange: "arancione scuro",
+      deepPurple: "viola scuro",
+      green: "verde",
+      grey: "grigio",
+      indigo: "indaco",
+      lightBlue: "azzurro",
+      lightGreen: "verde chiaro",
+      lime: "lime",
+      orange: "arancia",
+      pink: "rosa",
+      purple: "viola",
+      red: "rosso",
+      teal: "verde acqua",
+      yellow: "giallo",
+    },
+    goTo: "vai a",
+    tasksList: "elenco di àctivita",
+    search: "cerca",
+    add: "addizionare",
+    delete: "elimina",
+    edit: "modifica",
+    save: "salva",
+    cancel: "annulla",
+    ok: "OK",
+    msgItemNotFound: "{item} non trovato",
+    msgNoItemWithId: "Non esiste un {item} con l'ID: {id}"
+  },
+};
